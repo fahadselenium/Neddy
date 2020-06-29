@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Analyzer.AnnotationTransformer"/>
+  </listeners>
+  <test name="Test">
+    <classes>
+      <class name="Analyzer.Class1"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="Analyzer.Class1">
+        <methods>
+          <include name="g"/>
+        </methods>
+      </class> <!-- Analyzer.Class1 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
